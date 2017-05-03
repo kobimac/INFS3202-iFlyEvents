@@ -4,17 +4,15 @@
 $(document).ready(function() {
 
 // Sets the file location prefix. This remains constant for all images in the gallery. Eliminates the need for repetition in code.
-var location = "img/gallery/";
+var location = "slider.php";
 
-	$.ajax({
-	    url : location,
-	    success: function (data) {
-	        $(data).find("a").attr("href", function (i, val) {
-	            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-	                $(".gallery_images").append( '<div class = "col-lg-3 col-md-4 col-xs-6 thumb"><a href="'+location+val+'" data-toggle="lightbox" data-gallery="example-gallery" class="thumbnail"><img class="img-responsive" src="'+location+val+'" class="img-fluid"></a></div>' );
-	            } 
-	        });
-	    }
-	});
-	
-});	
+    $.ajax({
+        url : location,
+        success: function (data) {
+            for (var i=0; i<data.length; i++) {
+                var img = data[i];
+                $(".gallery_images").append( '<div class = "col-lg-3 col-md-4 col-xs-6 thumb"><a href="'+"img/gallery/"+img+'" data-toggle="lightbox" data-gallery="example-gallery" class="thumbnail"><img class="img-responsive" src="'+"img/gallery/"+img+'" class="img-fluid"></a></div>' );
+            }
+        }
+    });
+});
