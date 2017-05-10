@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/lightbox.css">
+
+</head>
+<body>
+	<h1>Personal Page</h1>
+	<div id="avator"></div>	
+		<a href="images/avator1.png" data-lightbox="avator1"><img src='images/avator1.png'></a>
+		<a href="images/avator2.png" data-lightbox="avator2"><img src='images/avator2.png'></a>
+		<a href="images/avator3.png" data-lightbox="avator3"><img src='images/avator3.png'></a>
+	<section class="about">
+		<p>Hi, my name is Geoff Popple and I am currently a <a href="https://www.uq.edu.au/">UQ</a> student enrolled in INFS3202.</p>
+	</section>
+
+	<section class="contact">
+		<ul>
+			<li>
+				<a href="mailto:s4208241@student.uq.edu.au">email</a>
+			</li>
+			<li>
+			
+			</li>
+		</ul>
+	</section>
+
+	<section class="education">
+		<h1>Education</h1>
+		<table>
+		  <tr>
+		    <td>Degree</td>
+		    <td>Time</td> 
+		    <td>Location</td>
+		  </tr>
+		  <tr>
+		    <td>Bachelor</td>
+		    <td>2011-2015</td> 
+		    <td>Queensland, Australia</td>
+		  </tr>
+
+		</table>
+	</section>
+	<div id="feedbackform">
+	<form method="post" action="sendmail.php">
+		Your Name:  <input type="text name="sender" /><br>
+		Your Email: <input type="text name="mailer" /><br>
+		<p vertical-align="middle">Message:
+		<textarea name="message" rows="5" cols="25"></textarea></p><br>
+		<input type="submit" ><input type="reset" value="Reset" >
+	</form>
+
+<script src="js/main.js"></script>
+<script src="js/lightbox-plus-jquery.js"></script>
+</body>
+</html>
