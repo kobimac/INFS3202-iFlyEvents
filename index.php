@@ -458,5 +458,4 @@ if (isset($_SESSION['username'])!="")
     <script type="text/javascript" src="js/slider.js"></script>
 	
 </body>
-
 </html>

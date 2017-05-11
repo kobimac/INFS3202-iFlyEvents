@@ -629,6 +629,7 @@ iframe {
 
 #top-text {
     margin-left: 4%;
+    overflow-x: hidden;
 }
 
 #top-text h1 {
@@ -660,12 +661,23 @@ iframe {
 /* ------------------- Mobile Styling ------------------- */
 @media screen and (max-width:768px) {
     iframe {
-    height: 600px;
-    width: 100%;
-    margin-bottom: 0px;
+        height: 600px;
+        width: 100%;
+        margin-bottom: 0px;
     }
 
-  .eventRules img {
-    margin-top: 8%;
+    .eventRules img {
+        margin-top: 8%;
+    }
+
+    #top-text {
+        margin-left: 0%;
+        overflow-x: hidden;
+    }
+
+    #top-text h1 {
+        color: #C42126;
+        font-weight: 700;
+        font-size: 2em;
     }
 }

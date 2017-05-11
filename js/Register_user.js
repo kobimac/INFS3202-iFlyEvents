@@ -9,7 +9,7 @@ $(document).ready(function () {
         $.ajax({
 
             type : 'POST',
-            url  : '../phpScripts/proc_register_user.php',
+            url  : 'phpScripts/proc_register_user.php',
             data : data,
             dataType: 'json',
             success :  function(response)

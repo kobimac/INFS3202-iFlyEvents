@@ -12,7 +12,7 @@ $(document).ready(function () {
         $.ajax({
 
             type : 'POST',
-            url  : '../phpScripts/proc_login_user.php',
+            url  : 'phpScripts/proc_login_user.php',
             data : data,
             dataType: 'json',
             success :  function(response)
