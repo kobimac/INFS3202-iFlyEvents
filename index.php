@@ -83,6 +83,16 @@ if (isset($_SESSION['username'])!="")
     <header id="top" class="header" class="fullscreen">
     </header>
 
+    <div id="top-text" class="text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 class="intro-text">#getintoskydiving</h1>
+                <a href="#events" class="fa fa-angle-double-down page-scroll animated">
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Events -->
     
     <section class="no-padding" id="events" >
@@ -115,7 +125,6 @@ if (isset($_SESSION['username'])!="")
             </div>
         </div>
             
-    </section>
 
     <aside class="bg-dark">
         <div class="container text-center">
@@ -129,7 +138,10 @@ if (isset($_SESSION['username'])!="")
 
     </aside>
 
+    </section>
+
     <!-- Gallery -->
+    <section class="no-padding" id="gallerybox" >
     <div id = "gallery" class="content-section">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
@@ -139,8 +151,7 @@ if (isset($_SESSION['username'])!="")
                     <img src="img/gallery/1.jpg" alt="..." id="active_image"> 
                 </div>
             </div>
-        </div>
-    <aside class="bg-dark">
+            <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Events Gallery</h2>
@@ -148,7 +159,9 @@ if (isset($_SESSION['username'])!="")
             </div>
         </div>
     </aside>
+        </div>
     </div>
+    </section>
 
     <div class="clearfix"></div>
 
